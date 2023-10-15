@@ -11,6 +11,12 @@ on:
     - sn32
     - sn32_openrgb
     - sn32_openrgb_new
+  workflow_dispatch:
+    inputs:
+          tags:
+            description: 'Test scenario tags'
+            required: false
+            type: boolean
 
 jobs:
   Build:
